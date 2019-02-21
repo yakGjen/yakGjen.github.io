@@ -215,5 +215,3 @@
   }
   
 })();
-
-window.history.pushState({page: "another"}, "another page", "example.html");
