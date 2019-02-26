@@ -19,6 +19,7 @@
   document.onclick = function(event) {
     if (event.target.closest('.menu-home')) {
       toogleContent('main');
+      window.history.pushState({page: "summary"}, "summary page", "");
     }
     if (event.target.closest('.main-btn') || event.target.closest('.menu-summary')) {
       toogleContent('summary');
