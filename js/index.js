@@ -20,6 +20,7 @@
     if (event.target.closest('.menu-home')) {
       toogleContent('main');
       window.history.pushState({page: "main"}, "main page", " ");
+      console.log(window.history);
     }
     if (event.target.closest('.main-btn') || event.target.closest('.menu-summary')) {
       toogleContent('summary');
