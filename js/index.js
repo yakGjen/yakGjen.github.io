@@ -19,7 +19,7 @@
   document.onclick = function(event) {
     if (event.target.closest('.menu-home')) {
       toogleContent('main');
-      window.history.replaceState({page: "main"}, "main page", "");
+      window.history.replaceState(null, null, null);
     }
     if (event.target.closest('.main-btn') || event.target.closest('.menu-summary')) {
       toogleContent('summary');
