@@ -22,7 +22,7 @@
     if (event.target.closest('.menu-home')) {
       toogleContent('main');
       window.history.replaceState("", document.title, window.location.pathname);
-      console.log(window.location.pathname);
+      console.log(window.location);
     }
     if (event.target.closest('.main-btn') || event.target.closest('.menu-summary')) {
       toogleContent('summary');
