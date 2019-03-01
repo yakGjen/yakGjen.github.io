@@ -16,10 +16,12 @@
   let classContentH6 = 'content-h6';
   let classContentH6P = 'content-h6-p';
   
+  window.history.replaceState("", document.title, window.location.pathname);
+  
   document.onclick = function(event) {
     if (event.target.closest('.menu-home')) {
       toogleContent('main');
-      window.history.replaceState(null, null, null);
+      window.history.replaceState("", document.title, window.location.pathname);
     }
     if (event.target.closest('.main-btn') || event.target.closest('.menu-summary')) {
       toogleContent('summary');
