@@ -16,7 +16,6 @@
   let classContentH6 = 'content-h6';
   let classContentH6P = 'content-h6-p';
   
-  console.log(window.history.state);
   document.onclick = function(event) {
     if (event.target.closest('.menu-home')) {
       toogleContent('main');
@@ -28,6 +27,7 @@
     if (event.target.closest('.menu-skills')) {
       toogleContent('skills');
       window.history.pushState({page: "skills"}, "skills page", "skills");
+      console.log(window.history.state);
     }
     if (event.target.closest('.menu-experience')) {
       toogleContent('experience');
