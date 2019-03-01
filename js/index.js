@@ -22,24 +22,23 @@
     }
     if (event.target.closest('.main-btn') || event.target.closest('.menu-summary')) {
       toogleContent('summary');
-      window.history.pushState({page: "summary"}, "summary page", "summary");
+      window.history.replaceState({page: "summary"}, "summary page", "summary");
     }
     if (event.target.closest('.menu-skills')) {
       toogleContent('skills');
-      window.history.pushState({page: "skills"}, "skills page", "skills");
-      console.log(window.history.state);
+      window.history.replaceState({page: "skills"}, "skills page", "skills");
     }
     if (event.target.closest('.menu-experience')) {
       toogleContent('experience');
-      window.history.pushState({page: "experience"}, "experience page", "experience");
+      window.history.replaceState({page: "experience"}, "experience page", "experience");
     }
     if (event.target.closest('.menu-education')) {
       toogleContent('education');
-      window.history.pushState({page: "education"}, "education page", "education");
+      window.history.replaceState({page: "education"}, "education page", "education");
     }
     if (event.target.closest('.menu-contacts')) {
       toogleContent('contacts');
-      window.history.pushState({page: "contacts"}, "contacts page", "contacts");
+      window.history.replaceState({page: "contacts"}, "contacts page", "contacts");
     }
   }
   
